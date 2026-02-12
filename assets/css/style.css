@@ -144,16 +144,32 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .contact-info i:first-child {
   margin-left: 0;
 }
+#topbar .social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 #topbar .social-links a {
   color: #437099;
-  padding-left: 15px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  line-height: 1;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  border-radius: 50%;
+  background: rgba(67, 112, 153, 0.1);
 }
+
 #topbar .social-links a:hover {
-  color: #9bc23b;
+  color: #fff;
+  background: #437099;
+  transform: translateY(-2px);
 }
+
 #topbar .social-links a:first-child {
   border-left: 0;
 }
@@ -2197,12 +2213,13 @@ section {
 
 #topbar .social-links .whatsapp {
   color: #25D366;
-  margin-left: 15px;
+  background: rgba(37, 211, 102, 0.1);
 }
 
 #topbar .social-links .whatsapp:hover {
-  color: #128C7E;
-  transform: scale(1.1);
+  color: #fff;
+  background: #25D366;
+  transform: translateY(-2px);
 }
 
 /* Floating WhatsApp Button */
